@@ -1,2 +1,2 @@
 # django-template-cheatsheet
-All the django template code sinppets
+All the django template code snippets
