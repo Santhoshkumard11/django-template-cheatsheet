@@ -1,0 +1,4 @@
+#when creating the user don't add the password right away
+u  = User("enter the fields")
+u.set_password("raw passowrd string")
+u.save
