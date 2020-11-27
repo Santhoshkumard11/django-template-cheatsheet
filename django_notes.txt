@@ -8,3 +8,5 @@ u.save
 
 user_id = User.objects.all().first().id
 print(user_id)
+
+#https and http
