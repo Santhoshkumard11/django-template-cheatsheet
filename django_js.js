@@ -15,3 +15,19 @@ HTMLElement.prototype.serialize = function(){
 
 var dataToSend = document.querySelector("form").serialize();
 //you will get the dict of all the inputs
+
+
+$(function() {
+    //execute something only when the document is ready
+});
+
+//get all the radio checked inputs
+
+#get the length of the checked radio buttons
+$('input:radio:checked').length;
+
+#get the specific selected row
+var row = $(this).closest("tr");
+
+//will give you the text inside the td
+var foo = $(row).find("td.classname").text();
