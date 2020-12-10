@@ -9,4 +9,9 @@ u.save
 user_id = User.objects.all().first().id
 print(user_id)
 
-#https and http
+
+
+#get distinct values (will give you the list of email id's)
+
+SubUser.objects.filter(username=username).values_list('email_id', flat=True).distinct()
+
