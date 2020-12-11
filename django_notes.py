@@ -15,3 +15,6 @@ print(user_id)
 
 SubUser.objects.filter(username=username).values_list('email_id', flat=True).distinct()
 
+#if you want to set a expiry time for your session - you can also put datetime object in the params
+
+request.session.set_expiry(300) would make the session expire in 5 minutes.
