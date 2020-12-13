@@ -14,6 +14,7 @@ print(user_id)
 #get distinct values (will give you the list of email id's)
 
 SubUser.objects.filter(username=username).values_list('email_id', flat=True).distinct()
+#will return only the sepecified field inside the values list
 
 #if you want to set a expiry time for your session - you can also put datetime object in the params
 
