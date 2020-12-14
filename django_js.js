@@ -23,10 +23,10 @@ $(function() {
 
 //get all the radio checked inputs
 
-#get the length of the checked radio buttons
+//get the length of the checked radio buttons
 $('input:radio:checked').length;
 
-#get the specific selected row
+//get the specific selected row
 var row = $(this).closest("tr");
 
 //will give you the text inside the td
