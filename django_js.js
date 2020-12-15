@@ -31,3 +31,8 @@ var row = $(this).closest("tr");
 
 //will give you the text inside the td
 var foo = $(row).find("td.classname").text();
+
+//NOTE: if the value in the option contains space then don't use jqury
+//user below
+var x = document.getElementById("mySelect");
+x.remove(x.selectedIndex);
