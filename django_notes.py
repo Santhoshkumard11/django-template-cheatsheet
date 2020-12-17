@@ -19,3 +19,16 @@ SubUser.objects.filter(username=username).values_list('email_id', flat=True).dis
 #if you want to set a expiry time for your session - you can also put datetime object in the params
 
 request.session.set_expiry(300) would make the session expire in 5 minutes.
+
+
+#doc string
+""" 
+    Args:
+    
+        username (str,required): email id of the user
+    
+    Returns:
+
+       (bool) : true if the user has devices else false
+
+"""
