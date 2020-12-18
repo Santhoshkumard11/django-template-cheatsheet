@@ -22,7 +22,7 @@ request.session.set_expiry(300) would make the session expire in 5 minutes.
 
 
 #doc string
-""" 
+""" Add a relavant description of the method here
     Args:
     
         username (str,required): email id of the user
