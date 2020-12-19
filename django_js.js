@@ -36,3 +36,7 @@ var foo = $(row).find("td.classname").text();
 //user below
 var x = document.getElementById("mySelect");
 x.remove(x.selectedIndex);
+
+//get the query string from the url
+const urlParams = new URLSearchParams(window.location.search);
+const foo = urlParams.get('foo'); // this will give you the value of foo
