@@ -40,3 +40,10 @@ x.remove(x.selectedIndex);
 //get the query string from the url
 const urlParams = new URLSearchParams(window.location.search);
 const foo = urlParams.get('foo'); // this will give you the value of foo
+
+//when you want to have a button click with enter key use the code below
+$("#id_of_textbox").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#id_of_button").click();
+    }
+});
