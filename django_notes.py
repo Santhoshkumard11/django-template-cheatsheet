@@ -32,3 +32,11 @@ request.session.set_expiry(300) would make the session expire in 5 minutes.
        (bool) : true if the user has devices else false
 
 """
+
+#if you want to see a list of items in the admin page
+@admin.register(models.Post)
+class AuthorAdmin(admin.ModelAdmin):
+    list_display = ('title', 'id', 'status', 'slug', 'author')
+    
+#NOTE: you have to replace the entire code of admin register to this and make sure the field names are the same
+
