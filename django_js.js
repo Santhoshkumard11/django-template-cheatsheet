@@ -47,3 +47,19 @@ $("#id_of_textbox").keyup(function(event) {
         $("#id_of_button").click();
     }
 });
+
+
+//parse date time
+ //get the current date time in 12 hr format;  hour12:false to make it 24 format
+  const today = new Date(new Date().toLocaleString("en-US", {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+}));
+
+//convert a string to date object
+const date_object = new Date("date string");
