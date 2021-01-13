@@ -67,3 +67,5 @@ const date_object = new Date("date string");
 //scroll to the end
 $("div").scrollTop(1000);
 
+//reload the page
+window.location.reload();
