@@ -63,3 +63,7 @@ $("#id_of_textbox").keyup(function(event) {
 
 //convert a string to date object
 const date_object = new Date("date string");
+
+//scroll to the end
+$("div").scrollTop(1000);
+
