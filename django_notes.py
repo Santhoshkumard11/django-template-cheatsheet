@@ -43,4 +43,20 @@ class AuthorAdmin(admin.ModelAdmin):
 #access django db shell
 python manage.py dbshell
 #-----------------
+#don't name the apps with the default names of the packages.
+''''
+allauth.account',
+is same as 'account',
+
+change the apps settings to the following,
+class ProfileConfig(AppConfig):
+    name = 'account'
+    label="profile"
+
+
+and add this to installed apps
+'account.apps.ProfileConfig',
+
+'''
+#-----------------
 
