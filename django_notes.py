@@ -39,4 +39,8 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ('title', 'id', 'status', 'slug', 'author')
     
 #NOTE: you have to replace the entire code of admin register to this and make sure the field names are the same
+#----------------
+#access django db shell
+python manage.py dbshell
+#-----------------
 
