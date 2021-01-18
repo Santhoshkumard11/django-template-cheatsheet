@@ -69,3 +69,5 @@ $("div").scrollTop(1000);
 
 //reload the page
 window.location.reload();
+
+//use the click listern instead of onclick functions directly in code
