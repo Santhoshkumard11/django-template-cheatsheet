@@ -59,4 +59,9 @@ and add this to installed apps
 
 '''
 #-----------------
+#if you have more than one backend auth then specify which one to use in login methond
+
+auth.login(request,user,backend='django.contrib.auth.backends.ModelBackend')
+
+#-----------------
 
