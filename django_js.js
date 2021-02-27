@@ -71,3 +71,7 @@ $("div").scrollTop(1000);
 window.location.reload();
 
 //use the click listern instead of onclick functions directly in code
+
+
+// find the element in the div with a buttton in it div > h5 > btn
+var test = $(lst).closest("div").find("h5").text();
